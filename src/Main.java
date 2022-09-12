@@ -1,3 +1,5 @@
+import java.net.SocketOption;
+
 public class Main {
     public static void main(String[] args) {
         //Task1
@@ -37,6 +39,29 @@ public class Main {
         for(short i=1; i<=512;i+=i){
             System.out.println(i);
         }
+        //Task 3
+        //Задание1
+
+        int salary=29000;
+        byte monthAll=0;
+        for (byte i=1;i<12;i++){
+            salary+=29000;
+            monthAll+=1;
+            System.out.println("Месяц "+monthAll+" сумма накоплений "+salary+" рублей");
+        }
+        //Задание 2
+        monthAll=0;
+        System.out.println();
+        int salary1=29000;
+        for (byte i=1;i<=12;i++){
+            double interestRate=salary1*0.01 ;
+            double salary2=salary1+interestRate;
+            double salary3=salary2*i;
+            monthAll+=1;
+            System.out.println("Месяц "+monthAll+" сумма накоплений "+salary3+" рублей");
+        }
+
+
 
 
 
